@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dark-mode.css" />
     <link rel="shortcut icon" href="imagens/logo.ico" type="image/x-icon" />
     <title>Tech Vision: A Era da Inteligência Artificial</title>
   </head>
 
-  <body>
+  <body class="">
     <nav>
-      <div class="links">
+      <div class="navbar">
         <a href="#Inicio">Inicio</a>
         <a href="#Inteligências">Inteligências Artificiais</a>
         <a href="#sobre">Sobre nós</a>
+        <button id="darkModeToggle" class="theme-toggle-button">Modo Escuro</button>
       </div>
+      
     </nav>
 
     <header id="Inicio">
@@ -24,7 +27,7 @@
           <span>Inteligência Artificiais</span>
         </h1>
       </div>
-      <img src="./imagens/chatgpt.png" loading="lazy" alt="logo" data-light="./imagens/chatgpt.png" data-dark="./imagens/gptbranco.png" />
+      <img src="./imagens/chatgpt.png" loading="lazy" alt="logo" data-light="./imagens/chatgpt.png" data-dark="./imagens/ChatGPT_logo.png" />
       <img
         src="./imagens/separdor.png"
         loading="lazy"
@@ -62,7 +65,7 @@
             />
             <h5 style="color: darkslategray;">DALL-E</h5>
           </div>
-          <p style="padding: 30px; color: darkslategray;">
+         <p  style="padding: 30px; color: darkslategray;">
             DALL-E: é um programa de inteligência artificial que cria imagens a
             partir de descrições textuais
           </p>
@@ -85,7 +88,7 @@
         </div>
       </div>
       <!-- #CHATGPT -->
-      <section id="chatgpt" class="ia">
+      <section id="chatgpt" class="ia ">
         <div class="left">
           <h1>ChatGPT</h1>
           <p>
@@ -95,7 +98,7 @@
             seu conhecimento prévio adquirido no pré-treinamento, formula uma
             resposta apropriada.
           </p>
-          <br />
+           <br />
           <h6>ChatGPT-4</h6>
           <p>
             O Chat GPT-4 é o sistema mais consolidado do openAI, ele é uma
@@ -104,7 +107,7 @@
             precisas, ele é capaz de resolver problemas complexos com uma grande
             precisão, graças ao seu conhecimento geral mais amplo e capacidade
             de resolução de problemas.
-          </p>
+          </p> 
         </div>
         <img
           src="./imagens/chatgpt.png"
@@ -112,7 +115,7 @@
           alt="logo"
           class="imagemia" 
           data-light="./imagens/chatgpt.png"
-          data-dark="./imagens/gptbranco.png"
+          data-dark="./imagens/ChatGPT_logo.png"
         />
       </section>
       <!-- #DALL-E -->
@@ -125,8 +128,7 @@
           data-dark="./imagens/dallbranco.png"
           class="imagemia"
         />
-        <div class="right">
-          
+        <div class="right " >
           <h1>DALL-E</h1>
           <p>
             A IA conhecida como DALL-E foi lançada no dia 5 de janeiro de 2021,
@@ -148,8 +150,8 @@
         </div>
        
       </section>
-      <!-- #SORA -->
-      <section id="sora" class="ia">
+      <!-- #SORA --> 
+      <section id="sora" class="ia ">
         <div class="left">
           <h1>Sora IA</h1>
           <p>
@@ -224,7 +226,7 @@
           <a href="#">Patrocínio</a>
           <a href="#">Contato</a>
         </div>
-        <p>&copy; Copryright 0 2024, Todos os direitos reservados.</p>
+        <p style="color: #989898;">&copy; Copryright 0 2024, Todos os direitos reservados.</p>
       </div>
     </footer>
 

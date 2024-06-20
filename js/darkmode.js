@@ -1,16 +1,26 @@
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.getElementById('theme-toggle');
-    const body = document.body;
-    const images = document.querySelectorAll('img[data-light][data-dark]');
-  
-    toggleButton.addEventListener('click', function() {
-      body.classList.toggle('dark-mode');
-      const isDarkMode = body.classList.contains('dark-mode');
-      images.forEach(img => {
-        img.src = isDarkMode ? img.getAttribute('data-dark') : img.getAttribute('data-light');
-      });
-      
-    });
+  const toggleButton = document.getElementById('darkModeToggle');
+  const bodyElement = document.body;
+  const images = document.querySelectorAll('img[data-light][data-dark]');
+
+  toggleButton.addEventListener('click', () => {
+      bodyElement.classList.toggle('dark-mode');
+      updateImages();
   });
-  
+
+  function updateImages() {
+      images.forEach(img => {
+          if (bodyElement.classList.contains('dark-mode')) {
+              img.src = img.getAttribute('data-dark');
+          } else {
+              img.src = img.getAttribute('data-light');
+          }
+      });
+  }
+
+  // Inicializar as imagens ao carregar a página
+  updateImages();
+});
